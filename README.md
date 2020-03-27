@@ -28,7 +28,7 @@
 ---
 
 
-### Executive Summary
+### Results
 - The best model was the LSTM Neural Network Model with a RMSE score of 738.58 which was a 13.36% improvement from the Naive Baseline score. Augmenting sentiment scores along with Reddit frequency posts **does** have a correlation.
 - Sentiment Scores alone are not a good feature point in predicting Bitcoin Pricing
 - Challenges observed: Sentiment scores require a lot of processing power. Further endeavors would be to access external reliable processing power to run the packages.  
