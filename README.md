@@ -16,23 +16,22 @@
 
 ### Problem Statement and Key Objective
 
-<b> Context </b>
-- Cryptocurrency is one of the more speculative markets in today's time. Cryptocurrency value lies in between the ideas of a stock, an actual currency, and a scarce hot commodity. With the boom in 2017 of Bitcoin nearly reaching $20,000 in USD value, and still maintaining its intrinsic value today, we want to know the potential root cause of Bitcoin.
+<b> Abstract </b>
+- Cryptocurrency is one of the more speculative markets in today's time. With the rise of Bitcoin nearly reaching $20,000 in USD value in 2017 while still maintaining its intrinsic value in today's time, cryptocurrency is an commodity that can not be ignored. 
 
 <b> Problem Statement </b>
 - The intention of this project is to see whether cryptocurrency posts online can predict Bitcoin pricing.
 
 <b> Key Objective </b>
-- Build a model that will take sentiment scores for Reddit posts and see if there's an underlying trend in human emotion and post activity.
+- Build a forecasting model that will take sentiment scores for Reddit posts and see if there's an underlying trend in human emotion and post activity.
 
 ---
 
 
 ### Executive Summary
+- The best model was the LSTM Neural Network Model with a RMSE score of 738.58 which was a 13.36% improvement from the Naive Baseline score. Augmenting sentiment scores along with Reddit frequency posts **does** have a correlation.
 - Sentiment Scores alone are not a good feature point in predicting Bitcoin Pricing
-- Augmenting sentiment scores along with Reddit frequency posts and rival cryptocurrency values **do** have a correlation.
 - Challenges observed: Sentiment scores require a lot of processing power. Further endeavors would be to access external reliable processing power to run the packages.  
-- The best model was the LSTM Neural Network Model, which is able to accept all features with an Absolute MSE score of 0.18.
 
 ---
 
@@ -60,9 +59,10 @@
 ---
 
 ### Conclusion and Recommendations
-- Reddit posts and overall cryptocurrency market value does have predicting value in forecast future bitcoin prices.
+- Reddit posts and overall cryptocurrency market value does have predicting value in forecast future bitcoin prices
 - Continue building robustness of model with ensemble LSTM methods to continue training model and improving accuracy
-- Further development of more years worth of posts to see if the model is realistic.
+- Further development of more years worth of posts to see if the model is realistic
+- Developing a customized NLP text classifier charting text and price increase correlation
 - Expand functionality and improve user-experience by building front-end with Flask or similar tool
 
 ---
