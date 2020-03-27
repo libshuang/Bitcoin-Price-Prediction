@@ -20,7 +20,7 @@
 - Cryptocurrency is one of the more speculative markets in today's time. With the rise of Bitcoin nearly reaching $20,000 in USD value in 2017 while still maintaining its intrinsic value in today's time, cryptocurrency is an commodity that can not be ignored. 
 
 <b> Problem Statement </b>
-- The intention of this project is to see whether cryptocurrency posts online can predict Bitcoin pricing.
+- The intention of this project is to see if there's a correlation between Bitcoin Prices and the general public sentiment for Bitcoin.
 
 <b> Key Objective </b>
 - Build a forecasting model that will take sentiment scores for Reddit posts and see if there's an underlying trend in human emotion and post activity.
