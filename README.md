@@ -8,7 +8,7 @@
 ### Table of contents
 - <u>[Problem Statement](#Problem-Statement-and-Key-Objective)</u>
 - <u>[Executive Summary](#Executive-Summary)</u>
-- <u>[Findings](#Findings)</u>
+- <u>[Results](#Results)</u>
 - <u>[Conclusion and Recommendations](#Conclusion_and_Recommendations)</u>
 - <u>[Sources](#Sources)</u>
 
