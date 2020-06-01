@@ -7,7 +7,6 @@
 
 ### Table of contents
 - <u>[Problem Statement](#Problem-Statement-and-Key-Objective)</u>
-- <u>[Executive Summary](#Executive-Summary)</u>
 - <u>[Results](#Results)</u>
 - <u>[Conclusion and Recommendations](#Conclusion_and_Recommendations)</u>
 - <u>[Sources](#Sources)</u>
@@ -17,19 +16,31 @@
 ### Problem Statement and Key Objective
 
 <b> Abstract </b>
-- Cryptocurrency is one of the more speculative markets in today's time. With the rise of Bitcoin nearly reaching $20,000 in USD value in 2017 while still maintaining its intrinsic value in today's time, cryptocurrency is an commodity that can not be ignored. The motivation behind this project is to prove that human involvment plays a role in deciding the worth of a commodity. 
+- Cryptocurrency is one of the more speculative markets in today's time. With the rise of Bitcoin nearly reaching $20,000 in USD value in 2017 while still maintaining its intrinsic value in today's time, cryptocurrency is an commodity that can not be ignored. The motivation behind this project is to prove that human involvment plays a role in deciding Bitcoin's worth. 
 
 <b> Problem Statement </b>
-- To determine whether public involvment and human emotion is a direct causation for the value of Bitcoin.
+- To determine whether public emotion involvment and is a direct causation for the value of Bitcoin.
 
-<b> Key Objective </b>
-- Build a forecasting model that will take human sentiment scores from online Reddit posts and see if there's an underlying trend in human emotion and post activity.
+<b> Project Outline </b>
+- Scraping online Reddit (r/bitcoin) data
+Used PushShift API to scrape real time Reddit data for all of 2019, and into 2020.
+
+- Data Wrangling
+Removed duplicates, null values, spaces, and combining columns.
+
+- Applying NLP Text normalization techniques
+By normalizing text, which includes lower casing, removing stop words and unnessessary jargon, we are able to keep the lettings constant
+
+- Sentiment scorer packages
+By using NLTK Intensive Sentiment and TextBlob Analyzer, we're able to scale each post into a "sentiment" score.
+
+- Neural Network Modeling
+
 
 ---
 
-
 ### Results
-- The best model was the LSTM Neural Network Model with a RMSE score of 738.58 which was a 13.36% improvement from the Naive Baseline score. Augmenting sentiment scores along with Reddit frequency posts **does** have a correlation.
+- The best model was the Summation Sentiment LSTM Neural Network Model with a MAPE score of 8.50, which was a 37.47% improvement from the Naive Baseline score (13.59). Augmenting sentiment scores along with Reddit frequency posts **does** have a correlation.
 - Sentiment Scores alone are not a good feature point in predicting Bitcoin Pricing
 - Challenges observed: Sentiment scores require a lot of processing power. Further endeavors would be to access external reliable processing power to run the packages.  
 
@@ -48,11 +59,6 @@
 | **blob_polarity** | Average Textblob positive/negative score for all the posts per date. |
 | **blob_subjectivity** | Average NLTK subjectivity score for all the posts per date. |
 | **sum_posts_x** | Number of posts per day. |
-| **sum_posts_y** | Number of posts per day version 2. |
-| **b_cash_price** | Bitcoin Cash Closing Price per day. |
-| **btc_price** | Bitcoin Closing Price per day. |
-| **ltc_price** | Litecoin Closing Price per day. |
-| **etc_price** | Ethereum Closing Price per day. |
 
 
 
@@ -60,8 +66,6 @@
 
 ### Conclusion and Recommendations
 - Reddit posts and overall cryptocurrency market value does have predicting value in forecast future bitcoin prices
-- Continue building robustness of model with ensemble LSTM methods to continue training model and improving accuracy
-- Further development of more years worth of posts to see if the model is realistic
 - Developing a customized NLP text classifier charting text and price increase correlation
 - Expand functionality and improve user-experience by building front-end with Flask or similar tool
 
