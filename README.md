@@ -23,15 +23,19 @@
 
 <b> Project Outline </b>
 - Scraping online Reddit (r/bitcoin) data
+
 Used PushShift API to scrape real time Reddit data for all of 2019, and into 2020.
 
 - Data Wrangling
+
 Removed duplicates, null values, spaces, and combining columns.
 
 - Applying NLP Text normalization techniques
+
 By normalizing text, which includes lower casing, removing stop words and unnessessary jargon, we are able to keep the lettings constant
 
 - Sentiment scorer packages
+
 By using NLTK Intensive Sentiment and TextBlob Analyzer, we're able to scale each post into a "sentiment" score.
 
 - Neural Network Modeling
