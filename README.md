@@ -1,4 +1,4 @@
-# Bitcoin Price and Public Sentiment
+# Does Online Public Sentiment Impact Bitcoin Price?
 
 ### Project Author
 - Libin Huang | <u>[LinkedIn](https://www.linkedin.com/in/libinh/)</u>
