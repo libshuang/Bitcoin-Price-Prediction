@@ -1,4 +1,4 @@
-# Bitcoin Price Prediction
+# Bitcoin Price and Public Sentiment
 
 ### Project Author
 - Libin Huang | <u>[LinkedIn](https://www.linkedin.com/in/libinh/)</u>
